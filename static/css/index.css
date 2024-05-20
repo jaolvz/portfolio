@@ -1,0 +1,128 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+@font-face {
+    font-family: minhaFonte2;
+    src: url('../fonts/DS-DIGI.TTF');
+}
+@font-face {
+    font-family: minhaFonte1;
+    src: url('../fonts/Blank\ River.ttf');
+}
+
+:root{
+    --texto: black;
+    --fundo: white
+
+}
+.dark-mode:root{
+    --texto: rgb(24, 206, 0);
+    
+}
+
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+header{
+height: 300px;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: minhaFonte1;
+background-color: white;
+}
+
+header h1{
+    color:var(--texto);
+    width: 50%;
+    text-align: center;
+    font-size: 5rem;
+}
+
+header ul{
+    list-style: none;
+    display: flex; 
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly
+
+}
+header ul li{
+    font-size: 1.5rem;
+    transition: font-size 0.3s ease;
+    &:hover{
+        font-size:1.7rem;
+        cursor: pointer;
+    }
+}
+
+main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sobre-mim{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: minhaFonte1;
+    padding: 20px;
+    width: 70%;
+    border-radius: 30px;
+    background-color:rgb(212, 212, 212);
+}
+
+
+.sobre-mim img{
+    width: 290px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.sobre-mim p {
+    width: 70%;
+    padding: 30px;
+    border-radius: 0px;
+}
+
+.habilidades
+{   margin-top: 50px;
+    padding: 20px;
+    width: 70%;
+    border-radius: 30px;
+    background-color:rgb(212, 212, 212);
+    text-align: center;
+}
+
+.icones
+{   width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.icones img{
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease;
+    &:hover{
+        scale: 1.1;
+    }
+    margin: 0px 5px;
+}
+.habilidades{
+    font-family: minhaFonte1;
+}
