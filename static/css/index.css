@@ -67,9 +67,9 @@ main{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
-    padding: 20px;
+
 }
 
 .sobre-mim{
@@ -125,4 +125,40 @@ main{
 }
 .habilidades{
     font-family: minhaFonte1;
+}
+
+.projetos{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: minhaFonte1;
+    
+}
+.projeto{
+    width: 70%;
+    margin-top: 25px;
+    background-color:rgb(212, 212, 212);
+    display: flex;
+    text-align: center;
+    border-radius: 30px;
+    overflow: hidden;    
+}
+
+.infos_projeto{
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.img_projeto{
+
+    width: 50%;
+}
+.foto_projeto{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
