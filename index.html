@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html class="dark-mod" lang="en">
+<html  lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/css/index.css">
     <link rel="stylesheet" href="static/css/icones/css/all.min.css">
+    <link rel="icon" href="static/imgs/eunaoseiprogramar.png" type="image/x-icon">
+
     <title>João Vitor - Portfólio</title>
 </head>
 <body>
@@ -16,7 +18,7 @@
             <a href="#habilidades"><li>Skills</li></a>
             <a href="#projetos"><li>Projetos</li></a>
             <a href="#contato"><li>Contato</li></a>
-            <li><i class="fa-solid fa-moon"></i></li>
+            <li  onclick="darkmode()"><i id="btn_dark" class="fa-solid fa-moon"></i></li>
 
         </ul>
         
@@ -24,9 +26,10 @@
     <main>
         <div id ="sobremim" class="sobre-mim">
             <h1> Sobre mim </h1>
-            <h2>Feja</h2>
-            <img src="static/imgs/eunaoseiprogramar.png" alt="Eu não sei programar">
-            <p>Eai, beleza ? Eu sou João Vitor, tenho 22 anos, carioca, sou um estudante universitário que ama programação
+
+            <img id="minha_foto" src="static/imgs/eunaoseiprogramar.png" alt="Eu não sei programar">
+            <p>Eai, beleza ? Eu sou João Vitor, tenho 22 anos, carioca, sou um 
+                estudante universitário que ama programação
             , e estou dedicado a aprender e aprimorar minhas habilidades na área. Hoje, estou cursando Análise e Desenvolvimento de Siteamas na FAETERJ
               e embora minha 
             carreira profissional esteja no inicio, tenho contato com a programação há
@@ -73,18 +76,14 @@
                 <iframe class="foto_projeto" src="https://www.youtube.com/embed/6Ync8fbyU8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="infos_projeto">
-                <h1 class="titulo_projeto">Automação da criação de termos </h1>
-                <p class="descricao_projeto"> 
-                    O objetivo do projeto é utilizar as APIs do Google Docs e Google Drive para permitir que dados em um documento sejam alterados via API, possibilitando o download do arquivo em PDF já modificado. Dessa forma, o processo de criação do documento será agilizado.                </p>
+                <h1 class="titulo_projeto"> AutoTermo </h1>
+                <p class="descricao_projeto">O AutoTermo é um script em Python para a automação da geração de termos. O objetivo do projeto é transformar documentos, utilizando as APIs do Google Docs e Google Drive, em PDFs já prontos para impressão, eliminando a necessidade de alterar dados manualmente no documento e de salvar o documento em PDF manualmente</p>
             <div class="btns_projeto">
                 <a href="https://github.com/jaolvz/redesocial-faculdade" target="_blank"> <button >Ir para o Código </button> </a>
             </div>
         
             </div>
         </div>
-
-
-       
 
         <div class="projeto">
             <div class="img_projeto">
@@ -118,27 +117,30 @@
         
             </div>
         </div>
-        
-
-
-
-       
 
        </div>
             
-
+       
        <div id="contato" class="contato">
-        <i class="fa-brands fa-youtube"></i> 
-        <i class="fa-brands fa-linkedin"></i>   
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-hackerrank"></i>
-        <i class="fa-solid fa-envelope"></i>
-       </div>
+            <h1>Contato</h1>
+        <div class="icones_contato">
+            <a href="https://www.youtube.com/@eunaoseiprogramar"  target="_blank" >   <i class="fa-brands fa-youtube"></i> </a>
+            <a href="https://www.linkedin.com/in/jaolvzz/" target="_blank"><i class="fa-brands fa-linkedin"></i>   </a>
+            <a href="https://github.com/jaolvz" target="_blank"> <i class="fa-brands fa-github"></i></a>
+            <a href="https://www.hackerrank.com/profile/jaolvz" target="_blank"><i class="fa-brands fa-hackerrank"></i></a>
+            <a href="mailto:joaovgoliveira01@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            
+           
+            
+            
+        </div>
+    </div>
             
 
 
 
     </main> 
     <footer></footer>
+    <script src="static/js/script.js"></script>
 </body>
 </html>
