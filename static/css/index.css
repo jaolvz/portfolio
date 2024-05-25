@@ -27,13 +27,13 @@ a {
     --fundo: white;
     --fundo-texto : rgb(212, 212, 212);
     --fonte : minhaFonte1;
-
 }
 .dark-mode:root{
     --texto: rgb(24, 206, 0);
     --fundo: black;
     --fundo-texto :rgb(26, 26, 26);
     --fonte : minhaFonte2;
+
 }
 
 
@@ -63,7 +63,7 @@ body{
 
 header{
 height: 300px;
-width: 70%;
+width: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -76,19 +76,24 @@ header h1{
     width: 50%;
     text-align: center;
     font-size: 5rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header ul{
     list-style: none;
     display: flex; 
     width: 50%;
+    height: 100%;
     align-items: center;
     justify-content: space-evenly
-
 }
 header ul li{
     font-size: 1.5rem;
     transition: all 0.3s ease;
+
     &:hover{
         scale:1.1;
         cursor: pointer;
@@ -126,7 +131,7 @@ main{
 }
 
 .sobre-mim p {
-    width: 70%;
+    width: 100%;
     padding: 30px;
     border-radius: 0px;
 }
@@ -157,6 +162,11 @@ main{
     }
     
 }
+#img_jungle{
+    width: 100px;
+     height: 100px;
+}
+
 
 
 .projetos{
@@ -170,7 +180,7 @@ main{
 }
 .projeto{
     width: 70%;
-    height: auto;
+    height: 400px;
     margin-top: 40px;
     background-color:var(--fundo-texto);
     display: flex;
@@ -181,7 +191,8 @@ main{
 
 .infos_projeto{
     width: 50%;
-    padding: 20px;
+    height: 100%;
+    padding: 10px;
     text-align: center;
 }
 
@@ -201,7 +212,6 @@ main{
     height: 30%;
     display: flex;
     align-items: center;
-    padding: 10px;
     justify-content: center;
 }
 .descricao_projeto{
@@ -214,6 +224,7 @@ main{
 
 .btns_projeto{
     height: 30%;  
+    width: 100%;
     display: flex;
     padding: 10px;
     align-items: center;
@@ -226,6 +237,7 @@ main{
     background-color: var(--fundo-texto);
     border-radius: 20px;
     color: var(--texto);
+ 
     transition: all 0.3s ease;
     &:hover{
         scale: 1.1;
@@ -256,4 +268,49 @@ main{
         scale: 1.1;
         text-shadow: 0 0 5px var(--texto)
     }
+}
+
+@media screen and (max-width:1024px)
+{
+header ul  li{
+font-size: 13px;
+}
+#minha_foto{
+    width: 200px;
+    height: 200px;
+}
+
+.icones img{
+    width: 25px;
+    height: 25px;
+}
+#img_jungle{
+    width: 50px;
+     height: 50px;
+}
+
+#descricao_projeto2, #descricao_projeto3,#descricao_projeto1{
+    font-size: 9px;
+}
+
+#titulo_projeto3{
+    font-size: 15px;
+}
+
+.btns_projeto button{
+    font-size: 10px;
+}
+
+/*darkmode*/
+.dark-mode #titulo_projeto2 , .dark-mode #titulo_projeto1{
+    font-size: 15px;
+}
+
+.dark-mode header ul li{
+    font-size: 8px;
+    }
+
+.dark-mode header h1{
+    font-size: 2em;
+}
 }
